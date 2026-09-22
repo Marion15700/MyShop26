@@ -13,9 +13,9 @@
         <!-- creer une liste non ordonnée -->
         <!-- menu de navigation -->
         <ul>
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="/pages/about.html">A propos</a></li>
-            <li><a href="/pages/products.html">Produits</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="pages/about.html">A propos</a></li>
+            <li><a href="pages/products.html">Produits</a></li>
             <li><a href="pages/signUp.html">Inscription</a></li>
             <li><a href="pages/signIn.html">Connexion</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
@@ -25,8 +25,9 @@
     <main>
         <h2>Bienvenue sur notre boutique en ligne!</h2>
         <p>
-            My Shop est une boutique en ligne de vente de vêtements pour toute la famille! <br>
-            Découvrez nos différentes collections et profitez de nos promotions!
+            My Shop est une boutique en ligne de vente de <span style="color: red;"> vêtements pour toute la famille!</span>
+        </p>
+        <p> Découvrez nos différentes collections et profitez de nos promotions!
         </p>
 
 
@@ -47,11 +48,100 @@
     </dl> -->
 
         <h2>Nos Produits</h2>
+
+        <!-- produit 1 -->
         <h3>produit 1</h3>
+        <img src="assets/images/images1.jpg" alt="combinaison chaude bébé" style="width: 200px;">
+        <p>Combinaison hiver marron pour bébé</p>
+        <p>Prix: 20 £</p>
+        <button type="button">Acheter</button>
+
+        <!-- produit 2 -->
+        <h3>produit 2</h3>
+        <img src="assets/images/images2.jpg" alt="pull coloré enfant" style="width: 200px;">
+        <p>Pull à capuche coloré pour tout petit</p>
+        <p>Prix: 10 £</p>
+        <button type="button">Acheter</button>
+
+         <!-- produit 3 -->
+        <h3>produit 3</h3>
+        <img src="assets/images/images3.jpg" alt="chemise homme grise" style="width: 200px;">
+        <p>Chemise grise homme</p>
+        <p>Prix: 25 £</p>
+        <button type="button">Acheter</button>
+
+        <!-- produit 4 -->
+        <h3>produit 4</h3>
+        <img src="assets/images/images6.jpg" alt="robe de soirée rouge" style="width: 200px;">
+        <p>Robe de soirée rouge</p>
+        <p>Prix: 40 £</p>
+        <button type="button">Acheter</button>
+
+        <!-- liste des produits dans table -->
+         <table border="1">
+            <tr>
+                <td>Catégories</td>
+                <td>Produit</td>
+                <td>Image</td>
+                <td>Description</td>
+                <td>Prix</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Enfant</td>
+                <td>Combinaison</td>
+                <td>
+                    <img src="assets/images/images1.jpg" alt="combinaison chaude bébé" style="width: 100px;">
+                </td>
+                <td>Combinaison d'hiver couleur marron</td>
+                <td>20£</td>
+                <td><button type="button">Acheter</button></td>
+            </tr>
+            <tr>
+                <td>Pull</td>
+                <td>
+                    <img src="assets/images/images2.jpg" alt="pull coloré enfant" style="width: 100px;">
+                </td>
+                <td>Pull à capuche coloré</td>
+                <td>10£</td>
+                <td><button type="button">Acheter</button></td>
+            </tr>
+            <tr>
+                <td>Homme</td>
+                <td>Chemise</td>
+                <td>
+                  <img src="assets/images/images3.jpg" alt="chemise homme grise" style="width: 100px;">  
+                </td>
+                <td>Chemise grise</td>
+                <td>25£</td>
+                <td><button type="button">Acheter</button></td>
+            </tr>
+            <tr>
+                <td>Femme</td>
+                <td>Robe</td>
+                <td>
+                    <img src="assets/images/images6.jpg" alt="robe de soirée rouge" style="width: 100px;">
+                </td>
+                <td>Robe de soirée rouge</td>
+                <td>40£</td>
+                <td><button type="button">Acheter</button></td>
+            </tr>
+
+            <!-- rajout d'une ligne promotion -->
+            <tr>
+                <td>PROMOTION</td>
+                <td colspan="5">20% sur tous les articles</td>
+            </tr>
+         </table>
     </main>
 
     <footer>
-
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">linkedin</a>
+        <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
+        <a href="tel:0699674827">0699674827</a>
+        <!-- download: pour telecharcher automatiquement -->
+        <a href="assets/pdf/Mentions légales.pdf" download>mentions legales</a>
     </footer>
 </body>
 
