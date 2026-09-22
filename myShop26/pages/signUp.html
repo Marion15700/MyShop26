@@ -19,6 +19,7 @@
             <li><a href="signUp.html">Inscription</a></li>
             <li><a href="signIn.html">Connexion</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="panier.html">Mon Panier</a></li>
         </ul>
     </header>
     
@@ -38,19 +39,41 @@
             <label for="pwd">Mot de passe: </label>
             <input type="password" id="pwd" placeholder="Votre mot de passe" required><br>
             
+            <!-- radio -->
             <label>Genre: </label>
-            <input type="radio" id="femme" name="genre">
+            <input type="radio" id="femme" name="genre" value="femme">
             <label for="femme">Femme</label>
 
-            <input type="radio" id="homme" name="genre">
+            <input type="radio" id="homme" name="genre" value="homme">
             <label for="homme">Homme</label>
 
-            <input type="radio" id="autre" name="genre">
-            <label for="autre">Autre</label>
+            <input type="radio" id="autre" name="genre" value="autre">
+            <label for="autre">Autre</label><br>
 
             <!-- checkbox -->
-             
+            <label>Intérets: </label>
+            <input type="checkbox" name="interets" id="vetements" value="vetements">
+            <label for="vetements">Vêtements</label>
+
+            <input type="checkbox" name="interets" id="accessoires" value="accessoires">
+            <label for="accessoires">Accessoires</label><br>
+
              <!-- liste deroulante -->
+              <label for="pays">Pays: </label>
+              <select name="pays" id="pays">
+                <option value="france">France</option>
+                <option value="tunisie">Tunisie</option>
+                <option value="espagne">Espagne</option>
+                <option value="autriche">Autriche</option>
+              </select><br>
+
+              <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+            <label for="newsletter">S'inscrire à la newsletter</label><br>
+
+            <input type="checkbox" name="cgv" id="cgv" value="yes" >
+            <label for="cgv">J'accepte les <a href="../assets/pdf/cgv1.pdf">conditions générales de vente</a></label><br>
+
+              <button type="submit">S'inscrire</button>
         </form>
     </main>
 
