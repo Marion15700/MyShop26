@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySHOP</title>
 </head>
+
 <body>
     <header>
         <!-- titre principal -->
@@ -12,40 +14,54 @@
 
         <!-- creer une liste non ordonnée -->
         <!-- menu de navigation -->
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="products.html">Produits</a></li>
-            <li><a href="signUp.html">Inscription</a></li>
-            <li><a href="signIn.html">Connexion</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="panier.html">Mon Panier</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li><a href="signUp.html">Inscription</a></li>
+                <li><a href="signIn.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="panier.html">Mon Panier</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
     <main>
+        <section>
         
-
-        <form action="">
-            <h2>Se connecter</h2>
-            <p>Nouveau sur ce site? <a href="signUp.html">S'inscrire</a></p>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="exemple@gmail.com" required><br>
-
-            <label for="pwd">Mot de passe: </label>
-            <input type="password" id="pwd" placeholder="Votre mot de passe" required>
-
-            <p>Mot de passe oublié?</p>
-
-            <button type="submit">Se connecter</button>
+            <form action="" method="">
+                <h2>Se connecter</h2>
+                <p>Nouveau sur ce site? <a href="signUp.html">S'inscrire</a></p>
         
-        </form>
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="exemple@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="pwd">Mot de passe: </label>
+                        <input type="password" name="password" id="pwd" placeholder="Votre mot de passe" required>
+                    </div>
+                </fieldset>
         
+                <!-- voir plus tard lien pour récupérer le mot de pass oublié  -->
+                <p>Mot de passe oublié?</p>
+        
+                <button type="submit">Se connecter</button>
+        
+            </form>
+        </section>
     </main>
 
     <footer>
-
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">linkedin</a>
+        <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
+        <a href="tel:0699674827">0699674827</a>
+        <!-- download: pour telecharcher automatiquement -->
+        <a href="assets/pdf/Mentions_légales.pdf" download>mentions legales</a>
     </footer>
 
 </body>
