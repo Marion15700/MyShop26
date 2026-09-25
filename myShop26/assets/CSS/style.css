@@ -1,0 +1,126 @@
+/*header*/
+header , footer {
+    background-color: rgb(157, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header a , footer a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+}
+
+ /*section*/
+section {
+    background-color: rgb(245, 230, 144);
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin: 10px 15px;
+}
+
+/*images*/
+img {
+    width: 200px;
+    height: 250px;
+}
+
+table img {
+    width: 100px;
+    height: 150px;
+}
+
+/*titres dans index.html*/
+.titre-presentation {
+    padding: 10px 15px 20px 5px;
+    border: 1px dashed rgb(157, 0, 0);
+    margin: 20px;
+    text-align: center;
+}
+
+ /*formulaires*/
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: solid 1px grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+fieldset {
+    border-color: gray;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 2px;
+}
+form div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+
+form label {
+    font-weight: bold;
+    margin-bottom: 2px;
+ }
+
+ input , select {
+    padding: 10px;
+    border-color: grey;
+    border-radius: 5px;
+ }
+
+ /*j'ai fais comme cela pour eviter un decalage au niveau des inputs radio et chekbox*/
+#nom , #prenom , #email , #pwd , #pays {
+    width: 100%;
+}
+
+#femme , #homme , #autre , #vetements , #accessoires {
+    margin-right: 10px;
+}
+
+
+#nom {
+    border: solid 2px;
+    border: dashed red;
+    
+}
+ /*boutton s'inscrire*/
+.btn-signUp {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*produits*/
+article {
+    background-color: rgb(218, 217, 217);
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+article button {
+    background-color: orangered;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.price {
+    font-weight: bold;
+    color: orangered;
+}

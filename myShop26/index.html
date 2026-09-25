@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <title>MySHOP</title>
 </head>
 
@@ -29,7 +31,7 @@
 
     <main>
         <section>
-            <h2>Bienvenue sur notre boutique en ligne!</h2>
+            <h2 class="titre-presentation">Bienvenue sur notre boutique en ligne!</h2>
             <p>
                 My Shop est une boutique en ligne de vente de <span style="color: red;"> vêtements pour toute la
                     famille!</span>
@@ -39,7 +41,7 @@
         </section>
 
         <section>
-            <h2>Catégories</h2>
+            <h2 class="titre-presentation">Catégories</h2>
             <!-- liste ordonnees -->
             <ol>
                 <li>Femme</li>
@@ -57,41 +59,41 @@
         </section>
 
         <section>
-            <h2>Nos Produits</h2>
+            <h2 class="titre-presentation">Nos Produits</h2>
 
             <!-- produit 1 -->
             <article>
                 <h3>produit 1</h3>
-                <img src="assets/images/images1.jpg" alt="combinaison chaude bébé" style="width: 200px;">
+                <img src="assets/images/images1.jpg" alt="combinaison chaude bébé" >
                 <p>Combinaison hiver marron pour bébé</p>
-                <p>Prix: 20 £</p>
+                <p class="price">Prix: 20 £</p>
                 <button type="button">Acheter</button>
             </article>
 
             <!-- produit 2 -->
             <article>
                 <h3>produit 2</h3>
-                <img src="assets/images/images2.jpg" alt="pull coloré enfant" style="width: 200px;">
+                <img src="assets/images/images2.jpg" alt="pull coloré enfant">
                 <p>Pull à capuche coloré pour tout petit</p>
-                <p>Prix: 10 £</p>
+                <p class="price">Prix: 10 £</p>
                 <button type="button">Acheter</button>
             </article>
 
             <!-- produit 3 -->
             <article>
                 <h3>produit 3</h3>
-                <img src="assets/images/images3.jpg" alt="chemise homme grise" style="width: 200px;">
+                <img src="assets/images/images3.jpg" alt="chemise homme grise">
                 <p>Chemise grise homme</p>
-                <p>Prix: 25 £</p>
+                <p class="price" >Prix: 25 £</p>
                 <button type="button">Acheter</button>
             </article>
 
             <!-- produit 4 -->
             <article>
                 <h3>produit 4</h3>
-                <img src="assets/images/images6.jpg" alt="robe de soirée rouge" style="width: 200px;">
+                <img src="assets/images/images6.jpg" alt="robe de soirée rouge">
                 <p>Robe de soirée rouge</p>
-                <p>Prix: 40 £</p>
+                <p class="price">Prix: 40 £</p>
                 <button type="button">Acheter</button>
             </article>
 
@@ -115,7 +117,7 @@
                         <td rowspan="2">Enfant</td>
                         <td>Combinaison</td>
                         <td>
-                            <img src="assets/images/images1.jpg" alt="combinaison chaude bébé" style="width: 100px;">
+                            <img src="assets/images/images1.jpg" alt="combinaison chaude bébé" >
                         </td>
                         <td>Combinaison d'hiver couleur marron</td>
                         <td>20£</td>
@@ -124,7 +126,7 @@
                     <tr>
                         <td>Pull</td>
                         <td>
-                            <img src="assets/images/images2.jpg" alt="pull coloré enfant" style="width: 100px;">
+                            <img src="assets/images/images2.jpg" alt="pull coloré enfant">
                         </td>
                         <td>Pull à capuche coloré</td>
                         <td>10£</td>
@@ -161,7 +163,7 @@
         </section>
         <!-- contenu complementaire: les infos secondaires du contenu principal -->
         <aside>
-            <h2>Promotion</h2>
+            <h2 class="titre-presentation">Promotion</h2>
 
             <!-- mark: pour souligner quelque chose important, attirer l'attention  -->
             <p> <mark> -20% sur les accessoires! </mark></p>
@@ -169,10 +171,10 @@
     </main>
 
     <footer>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/feed/" target="_blank">linkedin</a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
-        <a href="tel:0699674827">0699674827</a>
+        <a href="tel:0699674827"><i class="fa-solid fa-square-phone"></i></a>
         <!-- download: pour telecharcher automatiquement -->
         <a href="assets/pdf/Mentions_légales.pdf" download>mentions legales</a>
     </footer>
