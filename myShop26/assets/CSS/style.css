@@ -1,4 +1,19 @@
-/*header*/
+/*selecteur universel pour tte la page html. reinitialisation*/
+* {
+    margin: 0;
+    padding: 0;
+    /*pour gérer correctement la taille, pour page responsive*/
+    box-sizing: border-box;
+}
+
+
+body {
+    /*plusieurs police de proposer en solutions de secours*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+/*header, footer*/
 header , footer {
     background-color: rgb(157, 0, 0);
     color: white;
@@ -10,17 +25,40 @@ header a , footer a {
     color: white;
     text-decoration: none;
 }
+ footer a {
+    margin: 10px;
+    font-size: 20px;
+ }
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-footer {
+    margin: 0 auto;
+}
 
 header ul {
     list-style: none;
+}
+
+
+/*main*/
+
+main {
+    /*limite maximale*/
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
  /*section*/
 section {
     background-color: rgb(245, 230, 144);
     border: 1px solid black;
-    padding: 10px 15px;
-    margin: 10px 15px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 /*images*/
@@ -47,16 +85,17 @@ form {
     background-color: white;
     padding: 20px;
     max-width: 500px;
+    display: block;
     margin: 0 auto;
-    border: solid 1px grey;
+    border: solid 1px rgb(173, 173, 173);
     border-radius: 10px;
-    text-align: center;
+   /* text-align: center;*/ /*preferer display: block + margin 0 auto pour centrer*/
 }
 
 fieldset {
-    border-color: gray;
-    padding: 50px;
-    margin: 10px;
+    border: 1px solid rgb(196, 196, 196);
+    padding:15px 50px;
+    margin-bottom: 20px;
     border-radius: 5px;
 }
 
@@ -76,24 +115,24 @@ form label {
 
  input , select {
     padding: 10px;
-    border-color: grey;
+    border: 1px solid grey;
     border-radius: 5px;
  }
 
- /*j'ai fais comme cela pour eviter un decalage au niveau des inputs radio et chekbox*/
-#nom , #prenom , #email , #pwd , #pays {
+ /*pour cibler les input en fonction de leur type*/
+ input[type="text"], 
+ input[type="email"],
+ input[type="password"]{
     width: 100%;
-}
+ }
 
-#femme , #homme , #autre , #vetements , #accessoires {
+input[type="radio"],
+input[type="checkbox"] {
     margin-right: 10px;
 }
 
-
 #nom {
-    border: solid 2px;
-    border: dashed red;
-    
+    border: 2px dashed red;    
 }
  /*boutton s'inscrire*/
 .btn-signUp {
@@ -102,13 +141,17 @@ form label {
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 /*produits*/
 article {
     background-color: rgb(218, 217, 217);
-    width: 400px;
-    height: 500px;
+    width: 250px;
+    height: 450px;
+    margin: 20px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
 }
@@ -119,8 +162,147 @@ article button {
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin:  0 auto;
+    border: none;
 }
-.price {
+/*.price {
     font-weight: bold;
     color: orangered;
+}*/
+
+article img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+article h3 {
+    margin-bottom: 10px;
+}
+article p {
+    margin: 10px 0;
+}
+
+/*last of type pour selectionner le dernier element concerne*/
+article p:last-of-type {
+    font-weight: bold;
+    color: orangered;
+}
+
+button:hover {
+    background-color: chartreuse;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}
+input:focus {
+    border: 2px solid orange;
+    outline: none;/*pour enlever la ligne exterieur */
+}
+button:active {
+    background-color: yellow;
+    font-size: 10px;
+}
+
+/*container flex*/
+
+/*aligner horizontalement*/
+.product-container {
+    display: flex; /*propriété de flex box*/
+    /*height: 1500px;*/
+    flex-wrap: wrap; /*s'adapte a la taille de l'écran*/
+    justify-content: center;
+    align-items: center;
+}
+
+/*aligner verticalement*/
+/*.product-container {
+    display: flex; 
+    height: 1500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/*icones*/
+i:hover {
+    background-color: rgb(39, 139, 0);
+    color: gold;
+}
+i:active {
+    background-color: blueviolet;
+    font-size: 10px;
+}
+
+/*liens*/
+footer a:hover {
+    text-decoration: underline;
+    color:  gold;
+}
+footer a:focus {
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+/*categories*/
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categories div {
+    background-color: white;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+.categories div img {
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+
+.categories div p {
+    padding: 15px
+}
+
+/*tableau*/
+table {
+    border-collapse: collapse; 
+    /*permets de fusionner les bordures des cellules entre elles dans un tableau*/
+
+    width:100% ;
+}
+td {
+    border: 1px solid rgb(98, 98, 98);
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    border: 1px solid rgb(98, 98, 98);
+    padding: 10px;
+    text-align: center;
+}
+thead {
+    background-color: rgb(250, 142, 120);
+}
+.table-container {
+    border: 2px solid rgb(98, 98, 98);
+    border-radius: 10px;
+    /*overflow: hidden; pour afficher les partie cacher de notre tableau
+    et rends le tableau responsive*/
+
+    overflow-x: auto; /*affiche les partie cachée et permets 
+    de faire défiler le tableau de gauche à droite si ecran trop petit*/
+}
+caption {
+    background-color: whitesmoke;
+    padding: 10px;
 }

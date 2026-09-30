@@ -4,10 +4,10 @@
 			"path": ".."
 		},
 		{
-			"path": "../../../PROJET FIL ROUGE"
+			"path": "../../../PROJET FIL ROUGE/Projet2"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "PROJET FIL ROUGE"
+		"liveServer.settings.multiRootWorkspaceName": "Projet2"
 	}
 }
