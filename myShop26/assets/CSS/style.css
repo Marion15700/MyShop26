@@ -25,6 +25,11 @@ header a , footer a {
     color: white;
     text-decoration: none;
 }
+
+header, header ul{
+    display: flex;
+
+}
  footer a {
     margin: 10px;
     font-size: 20px;
@@ -227,11 +232,11 @@ button:active {
 }*/
 
 /*icones*/
-i:hover {
+.footer i:hover {
     background-color: rgb(39, 139, 0);
     color: gold;
 }
-i:active {
+.footer i:active {
     background-color: blueviolet;
     font-size: 10px;
 }
@@ -242,8 +247,9 @@ footer a:hover {
     color:  gold;
 }
 footer a:focus {
-    border: 2px solid blue;
-    border-radius: 5px;
+    /*indicateur de focus plus adapté accessibilite clavier*/
+    outline: 2px dashed royalblue;
+    outline-offset: 6px;
 }
 
 /*categories*/
@@ -266,6 +272,7 @@ footer a:focus {
 .categories div img {
     width: 250px;
     height: 200px;
+    object-fit: cover;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 } 
