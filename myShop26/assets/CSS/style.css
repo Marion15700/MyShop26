@@ -26,9 +26,24 @@ header a , footer a {
     text-decoration: none;
 }
 
-header, header ul{
+header {
     display: flex;
+    flex-wrap: wrap;
+    z-index: 1; /*pour etre sur qu'il reste au dessus lors du scroll
+    malgrès  la position sticky*/
+    justify-content: space-between;
+    align-items: center;
 
+    /*pour que la navbar reste fixe au scroll*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
  footer a {
     margin: 10px;
@@ -67,7 +82,7 @@ section {
 }
 
 /*images*/
-img {
+article img {
     width: 200px;
     height: 250px;
 }
@@ -152,9 +167,11 @@ input[type="checkbox"] {
 
 /*produits*/
 article {
+    position: relative;
+    /*z-index: 3; pour ordre de profondeur*/
     background-color: rgb(218, 217, 217);
     width: 250px;
-    height: 450px;
+    height: 500px;
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
@@ -214,13 +231,13 @@ button:active {
 /*container flex*/
 
 /*aligner horizontalement*/
-.product-container {
-    display: flex; /*propriété de flex box*/
-    /*height: 1500px;*/
-    flex-wrap: wrap; /*s'adapte a la taille de l'écran*/
+/*.product-container {
+    display: flex; propriété de flex box
+    height: 1500px;
+    flex-wrap: wrap; s'adapte a la taille de l'écran
     justify-content: center;
     align-items: center;
-}
+}*/
 
 /*aligner verticalement*/
 /*.product-container {
@@ -278,7 +295,7 @@ footer a:focus {
 } 
 
 .categories div p {
-    padding: 15px
+    padding: 15px;
 }
 
 /*tableau*/
@@ -314,4 +331,67 @@ thead {
 caption {
     background-color: whitesmoke;
     padding: 10px;
+}
+
+/*GRID SYSTEM*/
+.product-container {
+    
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: repeat(2, 1fr);
+    /*gap: 50px; gère l'espacement entre les elements*/
+
+    /*deplace la grille entiere*/
+    /*justify-content: center;*/
+   /* align-content: center;*/
+
+   /*deplace chaque element*/
+    justify-items: center;
+    align-items: center;
+}
+
+/*position des elements en css
+.titre-presentation {
+position: static; ou relative;
+}*/
+
+/*boutton qui reste fixe sur la page qd on scroll*/
+.scroll-top {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.badge {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: red;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.carousel button {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+.carousel-item img{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.description-carousel {
+    margin:  0 auto;
 }
