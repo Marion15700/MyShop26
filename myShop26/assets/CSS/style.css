@@ -377,7 +377,10 @@ position: static; ou relative;
     border-radius: 5px;
     font-weight: bold;
 }
+
+/*boutton sous le carousel*/
 .carousel button {
+    display: block;
     background-color: orangered;
     color: white;
     padding: 10px 20px 10px 20px;
@@ -386,12 +389,34 @@ position: static; ou relative;
     margin: 0 auto;
 
 }
+.carousel button:hover{
+    background-color: chartreuse;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+/*img carousel*/
 .carousel-item img{
     width: 50%;
     height: 50%;
     margin: 0 auto;
 }
 
+/*pour gerer la taille du carousel*/
+#carouselExample{
+    max-width: 600px;
+    margin: 0 auto;
+
+    z-index: 0;
+}
+
+/*texte sous le carousel*/
 .description-carousel {
-    margin:  0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.description-carousel span{
+    background-color: chartreuse;
+    padding: 5px;
 }
