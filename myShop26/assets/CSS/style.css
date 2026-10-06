@@ -22,7 +22,7 @@ header , footer {
 }
 
 header a , footer a {
-    color: white;
+    color: yellow;
     text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ main {
 
  /*section*/
 section {
-    background-color: rgb(245, 230, 144);
+    background-color: rgb(244, 238, 208);
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
@@ -98,13 +98,14 @@ table img {
     border: 1px dashed rgb(157, 0, 0);
     margin: 20px;
     text-align: center;
+    background-color: whitesmoke;
 }
 
  /*formulaires*/
 form {
     background-color: white;
     padding: 20px;
-    max-width: 500px;
+    max-width: 600px;
     display: block;
     margin: 0 auto;
     border: solid 1px rgb(173, 173, 173);
@@ -112,10 +113,16 @@ form {
    /* text-align: center;*/ /*preferer display: block + margin 0 auto pour centrer*/
 }
 
-fieldset {
+.signUp-fildset {
     border: 1px solid rgb(196, 196, 196);
     padding:15px 50px;
     margin-bottom: 20px;
+    border-radius: 5px;
+}
+fieldset{
+    border: 1px solid rgb(196, 196, 196);
+    padding: 10px 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -156,7 +163,7 @@ input[type="checkbox"] {
 }
  /*boutton s'inscrire*/
 .btn-signUp {
-    background-color: orangered;
+    background-color: rgb(171, 46, 46);
     color: white;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
@@ -179,7 +186,7 @@ article {
 }
 
 article button {
-    background-color: orangered;
+    background-color: rgb(171, 46, 46);
     color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
@@ -210,7 +217,7 @@ article p {
 /*last of type pour selectionner le dernier element concerne*/
 article p:last-of-type {
     font-weight: bold;
-    color: orangered;
+    color:  rgb(171, 46, 46);
 }
 
 button:hover {
@@ -357,7 +364,7 @@ position: static; ou relative;
 
 /*boutton qui reste fixe sur la page qd on scroll*/
 .scroll-top {
-    background-color: orangered;
+    background-color:  rgb(171, 46, 46);
     color: white;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
@@ -381,7 +388,7 @@ position: static; ou relative;
 /*boutton sous le carousel*/
 .carousel button {
     display: block;
-    background-color: orangered;
+    background-color:  rgb(171, 46, 46);
     color: white;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
@@ -420,3 +427,8 @@ position: static; ou relative;
     background-color: chartreuse;
     padding: 5px;
 }
+
+/*pour cacher le aria d'un logo ou img sans importance:
+ utiler aria-hidden plutôt que ari-label*/
+
+ 

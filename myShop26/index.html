@@ -34,8 +34,8 @@
         <section>
             <h2 class="titre-presentation">Bienvenue sur notre boutique en ligne!</h2>
             <p>
-                My Shop est une boutique en ligne de vente de <span style="color: red;"> vêtements pour toute la
-                    famille!</span>
+                My Shop est une boutique en ligne de vente de <span style="color: rgb(138, 1, 156);"> <strong> vêtements pour toute la
+                    famille!</strong></span>
             </p>
             <p> Découvrez nos différentes collections et profitez de nos <strong> promotions</strong>!
             </p>
@@ -182,19 +182,25 @@
             <!-- mark: pour souligner quelque chose important, attirer l'attention  -->
             <p> <mark> -20% sur les accessoires! </mark></p>
         </aside>
-        <button class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+        <button class="scroll-top" aria-label="retourner en haut de page"><i class="fa-solid fa-arrow-up"></i></button>
     
+<!--
+        <video>
+            <source src="..." type=""> pour importer la video
+            <track src="sous-titres-fr.vtt" srclang="fr"></track> pour accessibilite = sous titrage
+        </video>
+    -->
     </main>
 
     <footer class="footer">
         <div class="div-footer">
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="tel:0699674827"><i class="fa-solid fa-square-phone"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="lien vers instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="lien vers linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="tel:0699674827" aria-label="lien vers téléphone"><i class="fa-solid fa-square-phone"></i></a>
         </div>
 
         <div class="div-footer">
-            <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
+            <a href="mailto:myshop@gmail.com" aria-label="adress mail">myshop@gmail.com</a>
             <!-- download: pour telecharcher automatiquement -->
             <a href="assets/pdf/Mentions_légales.pdf" download>mentions legales</a>
         </div>
