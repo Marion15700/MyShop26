@@ -342,10 +342,11 @@ caption {
 
 /*GRID SYSTEM*/
 .product-container {
-    
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    /*display: grid;*/
     /*grid-template-columns: 1fr 1fr;*/
-    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-columns: repeat(2, 1fr);*/
     /*gap: 50px; gère l'espacement entre les elements*/
 
     /*deplace la grille entiere*/
@@ -353,6 +354,7 @@ caption {
    /* align-content: center;*/
 
    /*deplace chaque element*/
+   justify-content: center;
     justify-items: center;
     align-items: center;
 }
