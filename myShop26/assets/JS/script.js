@@ -359,7 +359,7 @@
 // console.log("le dernier element du tableau est: ", nombres[nombres.length-1]);
 // console.log("l' element du tableau à l'index 2 est: ", nombres[2]);
 
-// //ex5
+//ex5
 // let courses = ["pain", "lait", "oeufs"];
 
 // courses.push("fromage");
@@ -369,3 +369,218 @@
 
 // courses[2]= "yaourt";
 // console.log(courses);
+
+
+//TP5
+
+// let users = [];
+// users = ["marion", "randy", "hugo", "mélina", "charlie"];
+
+
+// //ajouter un user
+// function ajouterUser(element, tab){
+//     tab.push(element);
+//     console.log("urilisateur ajouté");
+    
+// }
+
+// ajouterUser("géraldine", users); //users.push("geraldine");
+// console.log(users);
+
+// for(let i = 0; i < users.length; i++) {
+//     console.log(users[i]);
+    
+// }
+
+// console.log(users.indexOf("randy"));
+// console.log(users.indexOf("test"));
+
+// //verifier la presence d'un user
+// function verifUsers(user) {
+//     if (users.indexOf(user) !== -1) {
+//         console.log("trouvé!");
+        
+//     } else {
+//         console.log("non trouvé!");
+        
+//     }
+// }
+// verifUsers("charlie");
+// console.log(users[1].toLowerCase().includes("a")); //affiche user ayant la lettre "a" grace à .includes
+
+// for (let i = 0; i < users.length; i++) {
+//     if (users[i].toLowerCase().includes("a")) {   //.toLowerCase pour convertir en minuscule
+//         console.log(users[i]);
+        
+//     }
+// }
+
+// console.log("find: ", users.find((element)=> element === "hugo"));  // .find pour trouver un user
+
+// //afficher un message et verif si tableau vide ou non
+
+
+
+//MANIPULATION DU DOM
+
+//POUR SELECTIONNER AVEC ID
+// const essaie = document.getElementById('product');
+// console.log(essaie); (pour le tester remettre un id product ds le html)
+
+// const titreh2 = document.querySelector('#product');
+// console.log(titreh2); (pour le tester remettre un id product ds le html)
+
+//POUR SELECTIONNER PAR CLASS
+// const productcards = document.getElementsByClassName('test');
+// console.log(productcards);
+// console.log("ier article", productcards[0]);
+
+//POUR SELECTIONNER PAR TAGNAME
+// const articles = document.getElementsByTagName('article');
+// console.log("exemple avec tagname", articles);
+
+//POUR SELECTIONNER LES  "noeuds" plutot que le html pour intervenir ds le DOM
+// const articles = document.querySelector('article');
+// console.log("ex query selector ", articles);
+
+// const allArticles = document.querySelectorAll('article');
+// console.log("ex query selector all", allArticles);
+
+
+//MODIFIER TEXT A PARTIR DU JS
+// const essaie = document.getElementById('product');
+// //(pour le tester remettre un id product ds le html)
+// console.log(essaie);
+// essaie.textContent = "test"; . textContent pour juste modifier le texte
+
+// const essaie = document.getElementById('product');
+// //(pour le tester remettre un id product ds le html)
+// essaie.innerHTML = "<strong>test</strong>"; //.inner pour changer le css directement
+// essaie.style.color = "red"; //. style pour modif css style
+//.inner = injection d'image possible
+
+//TP1
+//EX1
+// const essaie = document.getElementById('maintest');
+// essaie.style.backgroundColor = "red";
+// essaie.style.border= " 2px solid blue";
+
+//ex2
+//DIFFERENTS MODE DE SELECTION ET LEURS SYNTAXES
+//const titres = document.getElementsByClassName('h3'); // par nom de class
+//const titres2 = document.querySelectorAll('.h3'); //par class avec syntaxe css
+//const titres3 = document.querySelectorAll('.test h3'); //par "parents/enfants" syntaxe css
+//console.log(titres);
+//console.log(titres2);
+//console.log(titres3);
+//on a recupere une liste il faut pointer sur l'element!
+
+//titres[0].style.color = "red"; pour pointer un seul element!
+
+//boucle FOR pour pointer tous les elements tour a tour
+//for (let i = 0; i < titres2.length; i++) {
+    //titres2[i].style.color = "red";
+    
+//}
+
+//function fleche avec param titre
+//forEach pour parcourir un tableau
+//titres3.forEach((titre) => {
+        //titre.style.color = "green";
+        //titre.textContent = titre.textContent.toUpperCase();
+    //})
+
+//ex3
+//const bouttons = document.querySelectorAll('.test button');
+//console.log(bouttons);
+
+//bouttons.forEach((btn) => {
+       // btn.style.backgroundColor = "green";
+       // btn.textContent = "ajouter au panier";
+    //})
+
+//ex4
+//  const btnScroll = document.querySelector(".scroll-top");
+//  console.log(btnScroll);
+
+// //ajouter un evenement a detecter
+// btnScroll.addEventListener("click", function () {
+//     btnScroll.style.backgroundColor = "pink";
+//     btnScroll.textContent = "cliqué!";
+//     window.scrollTo(0, 0);
+// })
+
+// function afficherAlert() {
+//    alert("here from function afficher alert!");
+// }
+
+// ex5
+// const balisePrix = document.querySelectorAll(".price");
+// console.log(balisePrix);
+// //.textContent pour afficher le contenu texte
+// console.log(balisePrix[0].textContent); 
+
+
+//parcourir tous les prix
+
+// balisePrix.forEach((prix) => {
+    
+//     //recuperer contenu text
+//     let textPrix = prix.innerText;
+
+//     //extraire uniquement le montant
+//     let montantPrix = Number(textPrix.replace("Prix: ","").replace(" £","").trim());
+//     //.replace pour remplacer ou enlever et .trim pour supprimer les espaces
+//     console.log(montantPrix);
+    
+//     if (montantPrix<25) {
+//         prix.style.color = "green";
+//     } else if(montantPrix<=50){
+//         prix.style.color = "orange";
+//     } else {
+//         prix.style.color = "red";
+//     }
+
+// });
+
+
+//ex6
+
+// const balisePrix = document.querySelectorAll(".price");
+// console.log(balisePrix);
+// //.textContent pour afficher le contenu texte
+// console.log(balisePrix[0].textContent); 
+
+
+// //parcourir tous les prix
+
+// balisePrix.forEach((prix) => {
+    
+//     //recuperer contenu text
+//     let textPrix = prix.innerText;
+
+//     //extraire uniquement le montant
+//     let montantPrix = Number(textPrix.replace("Prix: ","").replace(" £","").trim());
+//     //.replace pour remplacer ou enlever et .trim pour supprimer les espaces
+//     //possibiliter utiliser .match pour extraire le prix
+//     console.log(montantPrix);
+
+//     const carte = prix.closest('article');
+//     //.closest cherche la balise 'article' la plus proche correspondante
+
+
+    
+//     if (montantPrix<25) {
+//         prix.style.color = "green";
+//         carte.insertAdjacentHTML("afterbegin", `<span class="badge">Bonne affaire</span>`);
+//         //inserer du html directement avec.insertAdjacentHTML(ou, quoi)
+//     } else if(montantPrix<=50){
+//         prix.style.color = "orange";
+//     } else {
+//         prix.style.color = "red";
+//         carte.insertAdjacentHTML("afterbegin", `<span class="badge">top produit</span>`);
+//     }
+
+// });
+
+

@@ -173,7 +173,7 @@ input[type="checkbox"] {
 }
 
 /*produits*/
-article {
+.product-card {
     position: relative;
     /*z-index: 3; pour ordre de profondeur*/
     background-color: rgb(218, 217, 217);
@@ -379,7 +379,7 @@ position: static; ou relative;
 .badge {
     position: absolute;
     right: 5px;
-    top: 5px;
+    bottom: 5px;
     background-color: red;
     color: aliceblue;
     padding: 5px;
