@@ -1,0 +1,73 @@
+{
+  "produits": [
+    {
+      "nom": "Robe de soirée",
+      "description": "rouge, élégante",
+      "prix": "60",
+      "imgURL": "assets/images/images6.jpg",
+      "id": "jbZZ7ENAG50"
+    },
+    {
+      "nom": "sweet enfant",
+      "description": "multicolore à capuche",
+      "prix": "10",
+      "imgURL": "assets/images/images2.jpg",
+      "id": "e9uUz6cGy3g"
+    },
+    {
+      "nom": "combinaison pour bébé",
+      "description": "marron, rembourrée",
+      "prix": "35",
+      "imgURL": "assets/images/images1.jpg",
+      "id": "GIfI5xHjtrM"
+    },
+    {
+      "nom": "chemise Homme",
+      "description": "coton, grise",
+      "prix": "20",
+      "imgURL": "assets/images/images3.jpg",
+      "id": "QGjJUwR_B1g"
+    },
+    {
+      "nom": "Costume homme",
+      "description": "trois pièces",
+      "prix": "55",
+      "imgURL": "assets/images/images5.jpg",
+      "id": "DizPG1UD1lI"
+    },
+    {
+      "nom": "Blouson homme",
+      "description": "vert, avec doublure chaude",
+      "prix": "75",
+      "imgURL": "assets/images/images4.jpg",
+      "id": "_yEerOnRAUE"
+    }
+  ],
+  "messages": [
+    {
+      "nom": "Degouy",
+      "prenom": "Marion",
+      "email": "marion.pechard@gmail.com",
+      "message": "jfkjhf;jhgf;jhg;jkh",
+      "id": "68vuhzv4CV8"
+    }
+  ],
+  "panier": [
+    {
+      "produitID": "jbZZ7ENAG50",
+      "quantite": 1,
+      "id": "yeMhR-yylaw"
+    },
+    {
+      "produitID": "GIfI5xHjtrM",
+      "quantite": 1,
+      "id": "ywGIPkAPUYM"
+    },
+    {
+      "produitID": "DizPG1UD1lI",
+      "quantite": 1,
+      "id": "KYyDVV3L3lw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
